@@ -1,0 +1,80 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+    --yellow: #FCCF14;
+}
+main {
+	margin: auto;
+    text-align: center;
+}
+body {
+    background-image: linear-gradient(red, black, green);
+    width: auto;
+    padding: 10px;
+    width: auto;
+}
+h1{
+    text-align: center;
+    color: yellow;
+    border-style: dotted;
+}
+h2{
+    text-align: center;
+    color: yellow;
+}
+h3{
+    text-align: flex-end;
+    border-style: dashed;
+    color: #FCCF14;
+}
+footer{
+    border-top: black 5px;
+    border-style: solid;
+    margin-top: auto;
+    padding: 20px;
+    display: flex;
+    align-content: space-around;
+}
+header{
+    border-style: solid;
+    border-color: black;
+    
+}
+.header-logo{
+    width: auto;
+    height: auto;
+    padding: .1em .1em .1em .1em;
+}
+.navbar-design{
+    border-style: dotted;
+    width: auto;
+    margin: .5em;
+    display: flex;
+    justify-content: space-evenly;
+	align-content: stretch;
+    font-size: 1.4rem;
+}
+.soc-media-icons{
+    border-style: dashed;
+    font-size: 2.5em;
+}
+.comic-index{
+    text-align: center;
+    color: yellow;
+}
+.login-box{
+    padding: 25px;
+    margin: 15px;
+    width: 10em;
+    height: 10em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+label{
+    color:#FCCF14
+}
