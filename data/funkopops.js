@@ -1,3 +1,5 @@
-const funkopops = {
+const funkoPops = {
     
 }
+
+export default funkoPops;

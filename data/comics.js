@@ -1,6 +1,6 @@
 const comics = [
   {
-    id: "",
+    _id: "",
     title: "Blood Syndicate: The Origin",
     author: "Ivan Velez Jr",
     artist: "Denys Cowan & Jimmy Palmiotti",
@@ -10,7 +10,7 @@ const comics = [
     imageUrl: "./images/Bloodsyndicatemsu0.jpeg",
   },
   {
-    id: "",
+    _id: "",
     title: "Bitter Root #1",
     author: "Chuck Brown",
     artist: "Sanford Green",
@@ -20,7 +20,7 @@ const comics = [
     imageUrl: "./Image/Black_Vol1_800x.jpg",
   },
   {
-    id: "",
+    _id: "",
     title: "Black Vol 1",
     author: "Kwanza Osajyefo",
     artist: "Robin Riggs",
@@ -30,3 +30,5 @@ const comics = [
     imageUrl: "./Image/IMG_0348.jpeg",
   },
 ];
+
+export default comics;

@@ -1,3 +1,5 @@
-const graphicnovels = {
+const graphicNovels = {
 
 }
+
+export default graphicNovels
