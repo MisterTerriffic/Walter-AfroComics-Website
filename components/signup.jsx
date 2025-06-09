@@ -1,8 +1,13 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useState } from "react-router-dom";
 
 function SignUp({ user, setUser }) {
   const navigate = useNavigate();
+
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleSignupFormSubmit = (e) => {
     e.preventDefault();
@@ -35,7 +40,7 @@ function SignUp({ user, setUser }) {
   };
 
   return (
-    <form onSubmit={SignUp}>
+    <form onSubmit={handleSignupFormSubmit}>
       <label htmlFor="firstName">First Name</label>
       <input
         type="text"
