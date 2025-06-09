@@ -1,15 +1,15 @@
-import { useState } from "react";
-import { Routes, Route } from "react-router-dom";
+import { useState } from 'react';
+import { Routes, Route } from 'react-router-dom';
 import "./App.css";
-import Header from "./shared/header";
-import Home from "./components/home";
-import About from "./components/about";
-import Auctions from "./components/auctions";
-import Blog from "./components/blog";
-import PocCreators from "./components/poccreators";
-import Products from "./components/products";
-import UserProfiles from "./components/products";
-import Footer from "./shared/footer";
+import Header from '../shared/header';
+import Home from '../components/home';
+import About from '../components/about';
+import Auctions from '../components/auctions';
+import Blog from '../components/blog';
+import PocCreators from '../components/poccreators';
+import Products from '../components/products';
+import UserProfiles from '../components/products';
+import Footer from '../shared/footer';
 
 function App() {
   const [user, setUser] = useState(localStorage.getItem("user") || {});
