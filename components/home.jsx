@@ -47,7 +47,7 @@ function Home() {
 
 
     return (
-          <main>
+          <main className="box-design">
     <h2>Website Title</h2>
     <p>[Website Title] is a collection of comics books, graphic novels, actions figures, Funko pops, toys, and auction site for rare valuable items created by
       black comic book creators. Products sold by the site can be found on the product page and the auctions can be found on the auctions page. History about 
