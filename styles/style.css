@@ -11,7 +11,7 @@ main {
     text-align: center;
 }
 body {
-    background-image: linear-gradient(red, black, green);
+    background-color: whitesmoke;
     width: auto;
     padding: 10px;
     width: auto;
@@ -77,4 +77,27 @@ header{
 }
 label{
     color:#FCCF14
+}
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    body {
+        color: black;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        color: black;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        color: black;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    body {
+        color: black;
+    }
 }
