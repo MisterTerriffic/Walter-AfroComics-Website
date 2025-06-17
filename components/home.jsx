@@ -60,6 +60,7 @@ function Home() {
         <div key={Comics._id} className="box-design">
           <ul>
             <li>{Comics.title}</li>
+            <li>{Comics.imageUrl}</li>
             <li>{Comics.author}</li>
             <li>{Comics.artist}</li>
             <li>{Comics.publisher}</li>
@@ -75,6 +76,7 @@ function Home() {
         <div key={GraphicNovels._id} className="box-design">
           <ul>
             <li>{GraphicNovels.title}</li>
+            <li>{GraphicNovels.imageUrl}</li>
             <li>{GraphicNovels.author}</li>
             <li>{GraphicNovels.artist}</li>
             <li>{GraphicNovels.publisher}</li>
@@ -87,14 +89,12 @@ function Home() {
 
     <h2>Funko Pops</h2> 
           {funkoPopsData.map((FunkoPops) => (
-        <div key={FunkoPops._id} className="box-design">
+        <div key={FunkoPops.itemNumber} className="box-design">
           <ul>
-            <li>{FunkoPops.title}</li>
-            <li>{FunkoPops.author}</li>
-            <li>{FunkoPops.publisher}</li>
-            <li>{FunkoPops.genre}</li>
-            <li>{FunkoPops.published}</li>
-            <li>{FunkoPops.about}</li>
+            <li>{FunkoPops.imageUrl}</li>
+            <li>{FunkoPops.name}</li>
+            <li>{FunkoPops.itemNumber}</li>
+            <li>{FunkoPops.details}</li>
           </ul>
         </div>
 ))}

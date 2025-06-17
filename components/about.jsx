@@ -14,7 +14,7 @@ const About = () => {
           auction off any rare items and sell content from comics books, toys,
           action figures, Funko pops, and more. People in the minority need
           places where they can celebrate themselves and see themselves we
-          provide a space from independent creators plus more. .
+          provide a space from independent creators plus more.
         </p>
       </div>
     </main>

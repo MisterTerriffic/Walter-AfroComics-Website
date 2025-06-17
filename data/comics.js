@@ -8,6 +8,7 @@ const comics = [
     published: "1993",
     about: "",
     imageUrl: "./images/Bloodsyndicatemsu0.jpeg",
+    price: 1,
   },
   {
     _id: "",
