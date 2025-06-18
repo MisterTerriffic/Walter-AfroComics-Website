@@ -1,4 +1,4 @@
-const About = () => {
+function About() {
   return (
     <main>
       <div className="box-design">

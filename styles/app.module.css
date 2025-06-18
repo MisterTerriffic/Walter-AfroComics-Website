@@ -11,7 +11,7 @@ main {
     text-align: center;
 }
 body {
-    background-color: whitesmoke;
+    background-color: rgba(125, 114, 114, 0.408);
     color: black;
     width: auto;
     padding: 10px;
@@ -19,30 +19,29 @@ body {
 }
 h1{
     text-align: center;
-    color: yellow;
+    color: black;
     border-style: dotted;
 }
 h2{
     text-align: center;
-    color: yellow;
+    color: black;
 }
 h3{
     text-align: flex-end;
     border-style: dashed;
-    color: #FCCF14;
+    color: black;
 }
 footer{
-    border-top: black 5px;
+    border: blue 5px;
     border-style: solid;
-    margin-top: auto;
-    padding: 20px;
+    margin: 1em;
+    padding: 1em;
     display: flex;
     align-content: space-around;
 }
 header{
     border-style: solid;
     border-color: black;
-    
 }
 .header-logo{
     width: auto;
@@ -60,7 +59,9 @@ header{
 }
 .soc-media-icons{
     border-style: dashed;
+    border-color: blueviolet;
     font-size: 2.5em;
+    align-content: space-around;
 }
 .comic-index{
     text-align: center;
