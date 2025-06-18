@@ -3,7 +3,7 @@ import Comics from "../data/comics";
 import GraphicNovels from "../data/graphicnovels";
 import FunkoPops from "../data/funkopops";
 
-function Home() {
+function Products() {
     const [comicData, setComicData] = useState([]);
     const [graphicNovelData, setGraphicNovelData] = useState([]);
     const [funkoPopsData, setFunkoPopData] = useState([]);
@@ -67,6 +67,7 @@ function Home() {
             <li>{Comics.genre}</li>
             <li>{Comics.published}</li>
             <li>{Comics.about}</li>
+            <li>{Comics.price}</li>
           </ul>
         </div>
 ))}
@@ -83,6 +84,7 @@ function Home() {
             <li>{GraphicNovels.genre}</li>
             <li>{GraphicNovels.published}</li>
             <li>{GraphicNovels.about}</li>
+            <li>{GraphicNovels.price}</li>
           </ul>
         </div>
 ))}
@@ -95,6 +97,7 @@ function Home() {
             <li>{FunkoPops.name}</li>
             <li>{FunkoPops.itemNumber}</li>
             <li>{FunkoPops.details}</li>
+            <li>{FunkoPops.price}</li>
           </ul>
         </div>
 ))}
@@ -102,4 +105,4 @@ function Home() {
     )
 }
 
-export default Home;
+export default Products;

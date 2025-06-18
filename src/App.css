@@ -4,9 +4,84 @@
   padding: 2rem;
   text-align: center;
 }
-
-.read-the-docs {
-  color: #888;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  margin: auto;
+  text-align: center;
+}
+body {
+  background-color: rgba(114, 125, 116, 0.408);
+  color: black;
+  width: auto;
+  padding: 10px;
+  width: auto;
+}
+h1 {
+  text-align: center;
+  color: black;
+  border-style: dotted;
+}
+h2 {
+  text-align: center;
+  color: black;
+}
+h3 {
+  text-align: flex-end;
+  border-style: dashed;
+  color: black;
+}
+footer {
+  border: blue 5px;
+  border-style: solid;
+  margin: 1em;
+  padding: 1em;
+  display: flex;
+  align-content: space-around;
+}
+header {
+  border-style: solid;
+  border-color: black;
+}
+.header-logo {
+  width: auto;
+  height: auto;
+  padding: 0.1em 0.1em 0.1em 0.1em;
+}
+.navbar-design {
+  border-style: dotted;
+  width: auto;
+  margin: 0.5em;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: stretch;
+  font-size: 1.4rem;
+}
+.soc-media-icons {
+  border-style: dashed;
+  border-color: blueviolet;
+  font-size: 2.5em;
+  align-content: space-around;
+}
+.comic-index {
+  text-align: center;
+  color: yellow;
+}
+.login-box {
+  padding: 25px;
+  margin: 15px;
+  width: 10em;
+  height: 10em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-content: space-around;
+}
+label {
+  color: #fccf14;
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
   body {
@@ -31,3 +106,7 @@
     color: black;
   }
 }
+
+/* .read-the-docs {
+  color: #888;
+} */
