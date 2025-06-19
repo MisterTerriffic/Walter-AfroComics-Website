@@ -58,7 +58,7 @@ function Home() {
       </p>
       <h2>Comic Book Collection</h2>
       <div>
-        {comicData.map((Comics) => (
+        {Comics.map((Comics) => (
           <div key={Comics._id} className="box-design">
             <ul>
               <li>{Comics.title}</li>
@@ -74,7 +74,7 @@ function Home() {
         ))}
       </div>
       <h2>Graphic Novels</h2>
-      {graphicNovelData.map((GraphicNovels) => (
+      {GraphicNovels.map((GraphicNovels) => (
         <div key={GraphicNovels._id} className="box-design">
           <ul>
             <li>{GraphicNovels.title}</li>
@@ -90,7 +90,7 @@ function Home() {
       ))}
 
       <h2>Funko Pops</h2>
-      {funkoPopsData.map((FunkoPops) => (
+      {FunkoPops.map((FunkoPops) => (
         <div key={FunkoPops.itemNumber} className="box-design">
           <ul>
             <li>{FunkoPops.imageUrl}</li>

@@ -27,7 +27,7 @@ function PocCreatorsList() {
           past.
         </p>
       </div>
-      {pocCreatorData.map((PocCreators) => (
+      {PocCreators.map((PocCreators) => (
         <div key={PocCreators._id} className="box-design">
           <ul>
             <li>{PocCreators.imageUrl}</li>
