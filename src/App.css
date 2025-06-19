@@ -14,7 +14,7 @@ main {
   text-align: center;
 }
 body {
-  background-color: rgba(114, 125, 116, 0.408);
+  background-color: rgb(197, 192, 192);
   color: black;
   width: auto;
   padding: 10px;
@@ -41,10 +41,12 @@ footer {
   padding: 1em;
   display: flex;
   align-content: space-around;
+  color: bisque;
 }
 header {
   border-style: solid;
   border-color: black;
+  color: bisque;
 }
 .box-design{
     border: 2px solid black;
