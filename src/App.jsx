@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
+import './App.css';
 import Header from './shared/Header';
 import Home from './components/Home';
 import About from './components/About';
