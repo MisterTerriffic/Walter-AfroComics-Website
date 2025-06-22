@@ -8,7 +8,7 @@ function Home() {
   const [graphicNovelData, setGraphicNovelData] = useState([]);
   const [funkoPopsData, setFunkoPopData] = useState([]);
 
-  const url = "";
+  const url = "https://afro-comics-server.onrender.com/";
 
   useEffect(() => {
     setComicData(comicData);
@@ -44,10 +44,10 @@ function Home() {
   }, []);
 
   return (
-    <main className="box-design">
-      <h2>Website Title</h2>
+    <main>
+      <h2>Tha Cr8</h2>
       <p>
-        [Website Title] is a collection of comics books, graphic novels, actions
+        [Tha Cr8] is a collection of comics books, graphic novels, actions
         figures, Funko pops, toys, and auction site for rare valuable items
         created by black comic book creators. Products sold by the site can be
         found on the product page and the auctions can be found on the auctions
@@ -56,10 +56,10 @@ function Home() {
         articles speaking on current events and opinion pieces on black
         superheroes.
       </p>
-      <h2>Comic Book Collection</h2>
-      <div>
+      <div className="comic-cover">
+        <h2>Comic Book Collection</h2>
         {Comics.map((Comics) => (
-          <div key={Comics._id} className="box-design">
+          <div key={Comics._id} className="comic-data">
             <ul>
               <li>{Comics.title}</li>
               <li>{Comics.imageUrl}</li>
@@ -71,11 +71,12 @@ function Home() {
               <li>{Comics.about}</li>
             </ul>
           </div>
-        ))}
+        ))};
       </div>
-      <h2>Graphic Novels</h2>
+      <div className="comic-cover">
+      <h2>Graphic Novel Collection</h2>
       {GraphicNovels.map((GraphicNovels) => (
-        <div key={GraphicNovels._id} className="box-design">
+        <div key={GraphicNovels._id} className="comic-data">
           <ul>
             <li>{GraphicNovels.title}</li>
             <li>{GraphicNovels.imageUrl}</li>
@@ -87,11 +88,12 @@ function Home() {
             <li>{GraphicNovels.about}</li>
           </ul>
         </div>
-      ))}
-
-      <h2>Funko Pops</h2>
+      ))};
+      </div>
+      <div className="comic-cover">
+              <h2>Funko Pops</h2>
       {FunkoPops.map((FunkoPops) => (
-        <div key={FunkoPops.itemNumber} className="box-design">
+        <div key={FunkoPops.itemNumber} className="comic-data">
           <ul>
             <li>{FunkoPops.imageUrl}</li>
             <li>{FunkoPops.name}</li>
@@ -99,7 +101,8 @@ function Home() {
             <li>{FunkoPops.details}</li>
           </ul>
         </div>
-      ))}
+      ))};
+      </div>
     </main>
   );
 }

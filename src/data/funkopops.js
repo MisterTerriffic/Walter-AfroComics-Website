@@ -8,6 +8,14 @@ const funkoPops = [
         price: 12,
 
     },
+    {
+        itemNumber: "002",
+        imageUrl: "",
+        name: "Ironheart MK2",
+        license: "Marvel",
+        details: "New adventures and faces await as you return to the Kingdom of Wakanda. Pop! Ironheart MK 2 is ready to take on the action as part of your Marvel collection. Collect this hero to complete your set from Marvel Studios’ Black Panther: Wakanda Forever. Vinyl bobblehead is approximately 3.85 in (9.8 cm) tall.",
+        price: 9.99,
+    }
 ]
 
 export default funkoPops;

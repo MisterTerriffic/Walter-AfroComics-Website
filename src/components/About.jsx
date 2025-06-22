@@ -2,10 +2,10 @@ function About() {
   return (
     <main>
       <div className="box-design">
-        <h1>Website Title</h1>
+        <h1>Tha Cr8</h1>
         <p>
           {" "}
-          [Website Title] is website dedicated to the chronically the history of
+          Tha Cr8 is website dedicated to the chronically the history of
           black comic book creators, their content, their characters, and their
           stories. Throughout history people of color have had to create their
           own space for themselves as access to them in the world were limited

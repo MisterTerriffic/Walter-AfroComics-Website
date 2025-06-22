@@ -28,7 +28,7 @@ function PocCreatorsList() {
         </p>
       </div>
       {PocCreators.map((PocCreators) => (
-        <div key={PocCreators._id} className="box-design">
+        <div key={PocCreators._id} className="comic-data">
           <ul>
             <li>{PocCreators.imageUrl}</li>
             <li>{PocCreators.name}</li>

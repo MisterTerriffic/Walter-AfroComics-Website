@@ -1,8 +1,8 @@
-
-function Footer() {
+import React from "react";
+const Footer = () => {
   <div className="footer_design">
     <span>
-      <h3>Website Title</h3>
+      <h3>Tha Cr8</h3>
     </span>
     <div className="soc-media-icons">
       <span>
