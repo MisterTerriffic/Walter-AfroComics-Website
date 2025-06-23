@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import Layout from "./components/Layout";
 import Header from "./shared/Header";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -11,18 +10,17 @@ import Poccreators from "./components/Poccreators";
 import Products from "./components/Products";
 import Login from "./components/Login";
 import Signup from "./components/Signup";
-import UserProfiles from "./components/Products";
+import UserProfiles from "./components/Userprofiles";
 import Footer from "./shared/Footer";
 
 function App() {
   const [user, setUser] = useState(localStorage.getItem("user") || {});
 
   return (
-    <div>
-      <Header/>
+    <div className="App">
+      <Header user={user} setUser={setUser}/>
       <Routes>
-        <Route path ="/" element={<Layout/> } />
-        <Route index element={<Home />} />
+        <Route path ="/" element={<Home/> } />
         <Route path="/about" element={<About />} />
         <Route path="/auctions" element={<Auctions />} />
         <Route path="/blog" element={<Blog />} />

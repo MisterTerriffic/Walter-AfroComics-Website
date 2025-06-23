@@ -8,37 +8,54 @@ function Home() {
   const [graphicNovelData, setGraphicNovelData] = useState([]);
   const [funkoPopsData, setFunkoPopData] = useState([]);
 
-  const url = "https://afro-comics-server.onrender.com/";
+  const deployedurl = "https://afro-comics-server.onrender.com/";
+  const url = "http://localhost:3000";
+
+  const comicbooks = "api/comicsbooks";
+  const funkopops = "api/funkopops";
+  const graphicnovels = "api/graphicnovels";
 
   useEffect(() => {
-    setComicData(comicData);
-    fetch(url)
+    fetch(`${url/comicbooks}`,{
+      method: "Get",
+      headers:{
+        "content-type": "application/json"
+      }
+    })
       .then((response) => response.json())
       .then((result) => {
-        setComicData(result.data);
-        console.log(result.data);
+        setComicData(result.data.comicData);
+        console.log(result.data.comicData, "Track comic data");
       })
       .catch(console.log("error"));
   }, []);
 
   useEffect(() => {
-    setGraphicNovelData(graphicNovelData);
-    fetch(url)
+     fetch(`${url/graphicnovels}`,{
+      method: "Get",
+      headers:{
+        "content-type": "application/json"
+      }
+    })
       .then((response) => response.json())
       .then((result) => {
-        setGraphicNovelData(result.data);
-        console.log(result.data);
+        setGraphicNovelData(result.data.graphicNovelData);
+        console.log(result.data.graphicNovelData);
       })
       .catch(console.log("error"));
   }, []);
 
   useEffect(() => {
-    setFunkoPopData(funkoPopsData);
-    fetch(url)
+  fetch(`${url/funkopops}`,{
+      method: "Get",
+      headers:{
+        "content-type": "application/json"
+      }
+    })
       .then((response) => response.json())
       .then((result) => {
-        setFunkoPopData(result.data);
-        console.log(result.data);
+        setFunkoPopData(result.data.funkoPopsData);
+        console.log(result.data).funkoPopsData;
       })
       .catch(console.log("error"));
   }, []);
@@ -62,7 +79,7 @@ function Home() {
           <div key={Comics._id} className="comic-data">
             <ul>
               <li>{Comics.title}</li>
-              <li>{Comics.imageUrl}</li>
+              <img src={Comics.imageUrl} alt="Comic Cover"/>
               <li>{Comics.author}</li>
               <li>{Comics.artist}</li>
               <li>{Comics.publisher}</li>
@@ -79,7 +96,7 @@ function Home() {
         <div key={GraphicNovels._id} className="comic-data">
           <ul>
             <li>{GraphicNovels.title}</li>
-            <li>{GraphicNovels.imageUrl}</li>
+            <img src={GraphicNovels.imageUrl} alt="Graphic Novel Covers"/>
             <li>{GraphicNovels.author}</li>
             <li>{GraphicNovels.artist}</li>
             <li>{GraphicNovels.publisher}</li>
@@ -95,7 +112,7 @@ function Home() {
       {FunkoPops.map((FunkoPops) => (
         <div key={FunkoPops.itemNumber} className="comic-data">
           <ul>
-            <li>{FunkoPops.imageUrl}</li>
+            <img src={FunkoPops.imageUrl} alt="Funko Pop Image"/>
             <li>{FunkoPops.name}</li>
             <li>{FunkoPops.itemNumber}</li>
             <li>{FunkoPops.details}</li>

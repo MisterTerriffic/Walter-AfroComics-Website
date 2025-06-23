@@ -4,15 +4,20 @@ import PocCreators from "../data/poccreators";
 function PocCreatorsList() {
   const [pocCreatorData, setPocCreatorData] = useState([]);
 
-  const url = "";
+  const url = "http://localhost:3000";
 
   useEffect(() => {
-    setPocCreatorData(pocCreatorData);
-    fetch(url)
+    fetch(`${url}`, {
+      method: "Get",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      credentials: "include"
+    })
       .then((response) => response.json())
       .then((result) => {
         setPocCreatorData(result.data.pocCreator);
-        console.log(result.data.pocCreator);
+        console.log(result.data.pocCreator, "creator data");
       })
       .catch(console.log("Error"));
   }, []);
@@ -30,7 +35,7 @@ function PocCreatorsList() {
       {PocCreators.map((PocCreators) => (
         <div key={PocCreators._id} className="comic-data">
           <ul>
-            <li>{PocCreators.imageUrl}</li>
+            <img src={PocCreators.imageUrl} alt="Profile Photos"/>
             <li>{PocCreators.name}</li>
             <li>{PocCreators.publications}</li>
             <li>{PocCreators.publisher}</li>
