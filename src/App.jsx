@@ -20,7 +20,7 @@ function App() {
     <div className="App">
       <Header user={user} setUser={setUser}/>
       <Routes>
-        <Route path ="/" element={<Home/> } />
+        <Route path ="/" index element={<Home/> } />
         <Route path="/about" element={<About />} />
         <Route path="/auctions" element={<Auctions />} />
         <Route path="/blog" element={<Blog />} />
