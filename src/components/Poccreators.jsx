@@ -29,20 +29,21 @@ function PocCreatorsList() {
         <p>
           {""}
           This page is to honor comic book creators, artist, and writers of the
-          past.
+          past, present, and future. 
         </p>
-      </div>
+      </div >
+      <div className="comic-cover">
       {PocCreators.map((PocCreators) => (
         <div key={PocCreators._id} className="comic-data">
           <ul>
-            <img src={PocCreators.imageUrl} alt="Profile Photos"/>
-            <li>{PocCreators.name}</li>
+            <img src={PocCreators.imageUrl} className="cover-image" alt="Profile Photos"/>
+            <h3>{PocCreators.name}</h3>
             <li>{PocCreators.publications}</li>
-            <li>{PocCreators.publisher}</li>
             <li>{PocCreators.about}</li>
           </ul>
         </div>
       ))}
+      </div>
     </main>
   );
 }

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 const BACK_END_URL = "http//localhost:3000";
 
 const Header = ({ user, setUser }) => {
+
   // const navigate = useNavigation();
 
   fetch(`${BACK_END_URL}`, {
@@ -23,14 +24,13 @@ const Header = ({ user, setUser }) => {
       console.log("error :>>", error);
     });
 
+    return(
   <header className="header_design">
-    <h1>The Cr8</h1>
-    <div className="header-logo">
+    <div>
       <Link to="/">
         <img
-          src="/images/TheCr8_Logo.jpeg"
-          alt="The Cr8 Logo"
-          width="9.375rem"
+          src="/images/TheCr8_Logo.jpeg" className="header-logo"
+          alt="The Cr8 Logo" 
         />
       </Link>
     </div>
@@ -38,12 +38,13 @@ const Header = ({ user, setUser }) => {
       <Link to="/">Home</Link>
       <Link to="/about">About</Link>
       <Link to="/userprofiles">User Profiles</Link>
-      <Link to="/auction">Auction</Link>
+      <Link to="/auctions">Auctions</Link>
       <Link to="/blog">Blog</Link>
       <Link to="/poccreators">POC Creators</Link>
       <Link to="/products">Products</Link>
     </nav>
-  </header>;
+  </header>
+    );
 };
 
 Header.propTypes = {

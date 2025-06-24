@@ -62,9 +62,9 @@ function Home() {
 
   return (
     <main>
-      <h2>The Cr8</h2>
+      <img src="/images/The_Cr8_ComicSans.jpeg" alt="The Cr8 Comic Sans"/>
       <p>
-        [The Cr8] is a collection of comics books, graphic novels, actions
+        The Cr8 is a collection of comics books, graphic novels, actions
         figures, Funko pops, toys, and auction site for rare valuable items
         created by black comic book creators. Products sold by the site can be
         found on the product page and the auctions can be found on the auctions
@@ -73,32 +73,31 @@ function Home() {
         articles speaking on current events and opinion pieces on black
         superheroes.
       </p>
+      <h2>Comic Book Collection</h2>
       <div className="comic-cover">
-        <h2>Comic Book Collection</h2>
         {Comics.map((Comics) => (
           <div key={Comics._id} className="comic-data">
             <ul>
-              <li>{Comics.title}</li>
-              <img src={Comics.imageUrl} alt="Comic Cover"/>
-              <li>{Comics.author}</li>
-              <li>{Comics.artist}</li>
+              <img src={Comics.imageUrl} className="cover-image" alt="Comic Cover" />
+              <h3>{Comics.title}</h3>
+              <li>Author: {Comics.author}</li>
+              <li>Illustrator: {Comics.artist}</li>
               <li>{Comics.publisher}</li>
-              <li>{Comics.genre}</li>
               <li>{Comics.published}</li>
               <li>{Comics.about}</li>
             </ul>
           </div>
         ))};
       </div>
-      <div className="comic-cover">
       <h2>Graphic Novel Collection</h2>
+      <div className="comic-cover">
       {GraphicNovels.map((GraphicNovels) => (
         <div key={GraphicNovels._id} className="comic-data">
           <ul>
-            <li>{GraphicNovels.title}</li>
-            <img src={GraphicNovels.imageUrl} alt="Graphic Novel Covers"/>
-            <li>{GraphicNovels.author}</li>
-            <li>{GraphicNovels.artist}</li>
+            <img src={GraphicNovels.imageUrl} className="cover-image" alt="Graphic Novel Covers"/>
+            <h3>{GraphicNovels.title}</h3>
+            <li>Author: {GraphicNovels.author}</li>
+            <li>Illustrator: {GraphicNovels.artist}</li>
             <li>{GraphicNovels.publisher}</li>
             <li>{GraphicNovels.genre}</li>
             <li>{GraphicNovels.published}</li>
@@ -107,13 +106,13 @@ function Home() {
         </div>
       ))};
       </div>
+          <h2>Funko Pops</h2>
       <div className="comic-cover">
-              <h2>Funko Pops</h2>
       {FunkoPops.map((FunkoPops) => (
         <div key={FunkoPops.itemNumber} className="comic-data">
           <ul>
-            <img src={FunkoPops.imageUrl} alt="Funko Pop Image"/>
-            <li>{FunkoPops.name}</li>
+            <img src={FunkoPops.imageUrl} className="funkopop-image" alt="Funko Pop Image"/>
+            <h3>{FunkoPops.name}</h3>
             <li>{FunkoPops.itemNumber}</li>
             <li>{FunkoPops.details}</li>
           </ul>

@@ -1,10 +1,10 @@
 const funkoPops = [
     {
         itemNumber: "001",
-        imageUrl: "",
-        name: "Black Panther",
+        imageUrl: "/images/60812-2.png",
+        name: "Deluxe T'Challa on Throne",
         license: "Marvel",
-        details: "Add a bold new look to your Marvel collection with this reimagined take on a fan favorite! Inspired by his original Funko Pop! debut, Pop! Black Panther returns with a fresh design, ready to stand tall among your heroes. Bring home the king of Wakanda and let the legend live on in your display. This vinyl bobblehead stands approximately 3.8 inches (9.7 cm) tall.",
+        details: "The King of Wakanda has rightfully assumed his position as the nation’s ruler. This exclusive Pop! T’Challa on Throne figurine captures an unforgettable moment from Marvel Studios’ Black Panther. Who will this hero be your next addition to your collection? Collect him to complete your Black Panther Legacy set. The vinyl bobblehead stands approximately 5.81 inches (14.8 cm) tall.",
         price: 12,
 
     },
@@ -18,10 +18,19 @@ const funkoPops = [
     },
     {
     itemNumber: "003",
-    imageUrl: "/images/Storm_Xmen97FP.png",
+    imageUrl: "/images/Storm_XMen97FP.png",
+    name: "Storm (X-Men '97)",
     license: "Marvel",
     details: "Weather any challenge with POP! Storm! Expand your X-Men team by recruiting this omega level mutant for your Marvel Studios’ X-Men ‘97 collection. The vinyl bobblehead is approximately 4.7 in (11.9 cm) tall.",
     price: 14.99,
+    },
+    {
+        itemNumber: "004",
+        imageUrl: "/images/StaticShock_FP.jpg",
+        name: "Static Shock #387 Funko Pop! - Justice League",
+        license: "Marvel",
+        details: "Pop! Heroes 387, a vinyl import from Funko, is a 3 3/4” tall, hot topic exclusive staticky shock #387 Funko Pop! from the Justice League Collection. This quirky collectible features a unique design and is perfect for any fan of the beloved series. Amp up your collection with Static Shock today!",
+        price: 15.99,
     }
 ]
 

@@ -60,10 +60,14 @@ function Products() {
         <h2>Comic Books</h2>
         {Comics.map((Comics) => (
           <div key={Comics._id} className="comic-cover">
-            <div>
+            
               <div className="comic-card">
                 <h3>{Comics.title}</h3>
-                {Comics.imageUrl}
+                <img
+                  src={Comics.imageUrl}
+                  className="cover-image"
+                  alt="Comic Cover"
+                />
               </div>
               <div className="comic-data">
                 <li>{Comics.author}</li>
@@ -71,9 +75,9 @@ function Products() {
                 <li>{Comics.publisher}</li>
                 <li>{Comics.published}</li>
                 <li>{Comics.about}</li>
-                <li>{Comics.price}</li>
+                <li>${Comics.price}</li>
               </div>
-            </div>
+            
           </div>
         ))}
       </div>
@@ -82,7 +86,11 @@ function Products() {
         <div key={GraphicNovels._id} className="comic-cover">
           <div className="comic-card">
             <h3>{GraphicNovels.title}</h3>
-            {GraphicNovels.imageUrl}
+            <img
+              src={GraphicNovels.imageUrl}
+              className="cover-image"
+              alt="Graphic Novel Covers"
+            />
           </div>
           <div className="comic-data">
             <li>{GraphicNovels.author}</li>
@@ -90,21 +98,25 @@ function Products() {
             <li>{GraphicNovels.publisher}</li>
             <li>{GraphicNovels.published}</li>
             <li>{GraphicNovels.about}</li>
-            <li>{GraphicNovels.price}</li>
+            <li>${GraphicNovels.price}</li>
           </div>
         </div>
       ))}
-    <h2>Funko Pops</h2>
+      <h2>Funko Pops</h2>
       {FunkoPops.map((FunkoPops) => (
         <div key={FunkoPops.itemNumber} className="comic-cover">
           <div className="comic-card">
-            {FunkoPops.imageUrl}
+            <img
+              src={FunkoPops.imageUrl}
+              className="funkopop-image"
+              alt="Funko Pop Image"
+            />
             <h3>{FunkoPops.name}</h3>
           </div>
           <div className="comic-data">
             <li>{FunkoPops.license}</li>
             <li>{FunkoPops.details}</li>
-            <li>{FunkoPops.price}</li>
+            <li>${FunkoPops.price}</li>
           </div>
         </div>
       ))}

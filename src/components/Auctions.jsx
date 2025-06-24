@@ -36,10 +36,10 @@ return (
 
        <div className="auction-item">
         <img
-          src="/images/IMG_0348jpeg"
+          src="/images/IMG_0348.jpeg"
           alt="The Man in The Machine"
         />
-        <h2 className="item-title">Auction Item Name</h2>
+        <h2>The Man in The Machine</h2>
         <p className="item-details">
           Starting at $0 | Ends in: {timeLeft} seconds
         </p>

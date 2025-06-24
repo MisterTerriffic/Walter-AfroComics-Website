@@ -32,6 +32,17 @@ const comics = [
     imageUrl: "/images/Black_Vol1_800x.jpg",
     price: 16.30,
   },
+  {
+    _id: "004",
+    title: "Storm #10: The Thunder War",
+    author: "Murewa Ayodele",
+    artist: "Lucas Werneck",
+    publisher: "Marvel",
+    published: "2025",
+    about: "THUNDER WAR, a cosmic conflict, pits Earth’s Mightiest Mutant, the youngest storm god, against Hadad, the eldest and most powerful. This war, worthy of the cosmic pantheon, demands that Storm do whatever it takes to stop the first thunder god. As Hadad sets his sights on the entire cosmos, will Ororo Munroe rise to the occasion and save the world, or will the Avenger and X-Man face crushing defeat?",
+    imageUrl: "/images/Storm_ThunderWar.jpg",
+    price: 4.99,
+  }
 ];
 
 export default comics;

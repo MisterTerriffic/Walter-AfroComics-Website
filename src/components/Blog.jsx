@@ -70,18 +70,19 @@ function Blog() {
   };
 
   return (
+    
     <div className="blog-container">
+      <h2>Create a Blog Post</h2>
       <div className="blog-form">
-        <h2>Create a Blog Post</h2>
         <input
-          placeholder="Title"
+          placeholder="Title" className="blog-title"
           value={newPost.title}
           onChange={(e) =>
             setNewPost((prev) => ({ ...prev, title: e.target.value }))
           }
         />
         <input
-          placeholder="What's on your mind?"
+          placeholder="What's on your mind?"className="blog-input"
           value={newPost.content}
           onChange={(e) =>
             setNewPost((prev) => ({ ...prev, content: e.target.value }))

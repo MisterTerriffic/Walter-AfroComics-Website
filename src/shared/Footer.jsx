@@ -9,27 +9,27 @@ const Footer = () => {
   return (
     <div className="footer_design">
       <span>
-        <h3>The Cr8</h3>
+        <h3>Contact Us</h3>
       </span>
       <div className="soc-media-icons">
         <span>
           <Link to="#">
-            <FontAwesomeIcon icon={faInbox} />
+            <FontAwesomeIcon icon={faInbox} style={{color: "#ff2600",}} />
           </Link>
         </span>
         <span>
-          <Link to="#">
-            <FontAwesomeIcon icon={faInstagram} />
+          <Link to="https://instagram.com">
+           <FontAwesomeIcon icon={faInstagram} style={{color: "#ff2600",}} />
           </Link>
         </span>
         <span>
-          <Link to="*">
-            <FontAwesomeIcon icon={faBluesky} />
+          <Link to="https://bsky.app">
+            <FontAwesomeIcon icon={faBluesky} style={{color: "#ff2600",}} />
           </Link>
         </span>
         <span>
-          <Link to="#">
-            <FontAwesomeIcon icon={faYoutube} />
+          <Link to="https://www.youtube.com">
+            <FontAwesomeIcon icon={faYoutube} style={{color: "#ff2600",}} />
           </Link>
         </span>
       </div>
