@@ -3,45 +3,45 @@ import { Link } from "react-router-dom";
 
 const BACK_END_URL = "http//localhost:3000";
 
-
-const Header =({user, setUser}) => {
-
-  //const navigate = useNavigation();
+const Header = ({ user, setUser }) => {
+  // const navigate = useNavigation();
 
   fetch(`${BACK_END_URL}`, {
     method: "GET",
     headers: {
-      "Content-type" : "application/json",
+      "Content-type": "application/json",
     },
-    credentials: "include"
+    credentials: "include",
   })
-
-  .then((response) => response.json())
-  .then((result) => {
-    console.log("result:>> ", result);
-    localStorage.removeItem("user", user);
-    setUser({});
-  })
-  .catch((error) => {
-    console.log("error :>>", error);
-
-  });
+    .then((response) => response.json())
+    .then((result) => {
+      console.log("result:>> ", result);
+      localStorage.removeItem("user", user);
+      setUser({});
+    })
+    .catch((error) => {
+      console.log("error :>>", error);
+    });
 
   <header className="header_design">
-    <h1>Tha Cr8</h1>
+    <h1>The Cr8</h1>
     <div className="header-logo">
       <Link to="/">
-      <img src ="" alt="#" width="150px" />
+        <img
+          src="/images/TheCr8_Logo.jpeg"
+          alt="The Cr8 Logo"
+          width="9.375rem"
+        />
       </Link>
     </div>
     <nav className="navbar-design">
-      <Link to="/" >Home</Link>
-      <Link to="/about" >About</Link>
-      <Link to="/userprofiles" >User Profiles</Link>
-      <Link to="/auction" >Auction</Link>
-      <Link to="/blog" >Blog</Link>
-      <Link to="/poccreators" >POC Creators</Link>
-      <Link to="/products" >Products</Link>
+      <Link to="/">Home</Link>
+      <Link to="/about">About</Link>
+      <Link to="/userprofiles">User Profiles</Link>
+      <Link to="/auction">Auction</Link>
+      <Link to="/blog">Blog</Link>
+      <Link to="/poccreators">POC Creators</Link>
+      <Link to="/products">Products</Link>
     </nav>
   </header>;
 };

@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react";
 
-function Blog(){
-    const [posts, setPosts] = useState([]);
+function Blog() {
+  const [posts, setPosts] = useState([]);
   const [newPost, setNewPost] = useState({ title: "", content: "" });
   const [editingPostId, setEditingPostId] = useState(null);
 
-useEffect(() => {
+  useEffect(() => {
     fetch("/api/posts")
       .then((response) => response.json())
       .then((data) => setPosts(data))
-      .catch((error) => console.error("Failed to fetch posts", error));
+      .catch(console.log("Error"));
   }, []);
 
   const handleCreatePost = () => {
@@ -62,7 +62,9 @@ useEffect(() => {
     })
       .then((response) => response.json())
       .then((updatedPost) => {
-        setPosts(posts.map((post) => (post.id === postId ? updatedPost : post)));
+        setPosts(
+          posts.map((post) => (post.id === postId ? updatedPost : post))
+        );
       })
       .catch(console.log("Error"));
   };
@@ -70,9 +72,7 @@ useEffect(() => {
   return (
     <div className="blog-container">
       <div className="blog-form">
-        <h2>
-          Create a Blog Post
-        </h2>
+        <h2>Create a Blog Post</h2>
         <input
           placeholder="Title"
           value={newPost.title}
@@ -115,7 +115,6 @@ useEffect(() => {
       ))}
     </div>
   );
-};
-
+}
 
 export default Blog;

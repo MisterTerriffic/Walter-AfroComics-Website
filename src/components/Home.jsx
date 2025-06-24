@@ -62,9 +62,9 @@ function Home() {
 
   return (
     <main>
-      <h2>Tha Cr8</h2>
+      <h2>The Cr8</h2>
       <p>
-        [Tha Cr8] is a collection of comics books, graphic novels, actions
+        [The Cr8] is a collection of comics books, graphic novels, actions
         figures, Funko pops, toys, and auction site for rare valuable items
         created by black comic book creators. Products sold by the site can be
         found on the product page and the auctions can be found on the auctions

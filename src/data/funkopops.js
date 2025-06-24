@@ -10,11 +10,18 @@ const funkoPops = [
     },
     {
         itemNumber: "002",
-        imageUrl: "",
+        imageUrl: "/images/1176ironheartmk2.png",
         name: "Ironheart MK2",
         license: "Marvel",
         details: "New adventures and faces await as you return to the Kingdom of Wakanda. Pop! Ironheart MK 2 is ready to take on the action as part of your Marvel collection. Collect this hero to complete your set from Marvel Studios’ Black Panther: Wakanda Forever. Vinyl bobblehead is approximately 3.85 in (9.8 cm) tall.",
         price: 9.99,
+    },
+    {
+    itemNumber: "003",
+    imageUrl: "/images/Storm_Xmen97FP.png",
+    license: "Marvel",
+    details: "Weather any challenge with POP! Storm! Expand your X-Men team by recruiting this omega level mutant for your Marvel Studios’ X-Men ‘97 collection. The vinyl bobblehead is approximately 4.7 in (11.9 cm) tall.",
+    price: 14.99,
     }
 ]
 

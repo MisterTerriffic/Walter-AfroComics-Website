@@ -1,7 +1,7 @@
 const poccreators = [
   {
     _id: "001",
-    imageUrl: "",
+    imageUrl: "/images/d_mcduffie.png",
     name: "Dwayne Mcduffie",
     publications: "Milestone Media, Marvel, and DC",
     about:
@@ -9,10 +9,17 @@ const poccreators = [
   },
   {
     _id: "002",
-    imageUrl: "",
+    imageUrl: "/images/Matt_Baker",
     name: "Matt Baker",
     publications: "All Negro Comics",
     about: "Clarence Matthew Baker, commonly known as Matt Baker, was one of the first successful Black comic book artists and a prominent figure during the Golden Age of Comic Books, which spanned roughly from the 1930s to the 1950s. Over the course of his career, he produced more than 1,000 comic pages and illustrated over 200 covers, contributing to titles such as Phantom Lady, Canteen Kate, and what is considered by many to be the first graphic novel, It Rhymes with Lust (1950). Born on December 10, 1921, in Forsyth County, North Carolina, to Clarence and Ethel Baker, he had two brothers, Robert and John. His family later relocated to Pittsburgh, Pennsylvania, where he contracted rheumatic fever, which permanently damaged his heart and exempted him from military service during World War II. After graduating high school around 1940, Baker moved to Washington D.C. and worked for the government before enrolling in the Cooper Union School of Engineering and Design in Manhattan by 1943. Influenced by artists like Reed Crandall and Will Eisner, Baker joined S. M. Iger Studios in 1944 as a background artist, making his comic debut that same year in Jumbo Comics #69 with a Sheena, Queen of the Jungle story. In 1945, he illustrated the first Black comic book hero, Voodah, in Crown Comics #3, although the character was soon altered to appear white. One of Baker’s most well-known projects began in 1947 when he redesigned and illustrated Phantom Lady, a title he worked on until 1949, showcasing his mastery of the “Good Girl” art style—an aesthetic focused on glamorous, often scantily clad women. In the 1950s, Baker expanded into romance, western, and science fiction genres, tailoring his style toward realism and emotional depth to appeal to a growing female readership. His work on It Rhymes with Lust in 1950 broke ground as a forerunner of the modern graphic novel, and he stayed on the series Canteen Kate throughout its 22-issue run, also freelancing for Atlas Comics, a precursor to Marvel. Despite constant deadlines and long working hours that strained his already fragile health, Baker continued drawing until he suffered a stroke in 1957. He died of a heart attack on August 11, 1959, at just 37 years old. His final story, “I Gave Up the Man I Love!” appeared posthumously in My Own Romance #73 in January 1960. In recognition of his pioneering work and lasting impact on the industry, Matt Baker was inducted into the Will Eisner Comic Book Hall of Fame in 2009.",
+  },
+  {
+    _id: "003",
+    imageUrl: "/images/Erika_Alexander",
+    name: "Erika Alexander",
+    publications: "Dark Horse Comics",
+    about: "Erika Alexander, a renowned actress and writer, is celebrated for her iconic roles as Maxine Shaw in the sitcom “Living Single” and Pam Tucker in “The Cosby Show.” Beyond her acting career, she has collaborated with her husband, Tony Puryear, to co-create and co-write the science-fiction graphic novel “Concrete Park.” In a remarkable turn of events, on February 28, the first issue of her “Buffy the Vampire Slayer” comic book spinoff, titled “Giles,” was released as part of a four-issue miniseries. Alexander has co-written this comic book spinoff with the creator of “Buffy,” Joss Whedon.",
   }
 ];
 
