@@ -5,16 +5,11 @@ function About() {
         <h1>The Cr8</h1>
         <p>
           {" "}
-          The Cr8 is website dedicated to the chronically the history of
-          black comic book creators, their content, their characters, and their
-          stories. Throughout history people of color have had to create their
-          own space for themselves as access to them in the world were limited
-          to them. Here we showcase, inform, expose, and sell content made by
-          black creators who have had to make their own on their own terms. We
-          auction off any rare items and sell content from comics books, toys,
-          action figures, Funko pops, and more. People in the minority need
-          places where they can celebrate themselves and see themselves we
-          provide a space from independent creators plus more.
+         The Cr8 is a website dedicated to chronicling the history of Black comic‑book creators, their content, their characters, and their stories. 
+         Throughout history, people of color have had to create their own spaces because access to mainstream platforms was limited for them. Here we 
+         showcase, inform, expose, and sell content made by Black creators who have had to forge their own terms. We auction off rare items and sell 
+         material from comic books, toys, action figures, Funko Pop collectibles, and more. People in the minority need places where they can celebrate 
+         themselves and see themselves. We provide a space for independent creators and beyond.
         </p>
       </div>
     </main>
