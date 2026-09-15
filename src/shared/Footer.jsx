@@ -13,17 +13,17 @@ const Footer = () => {
       </span>
       <div className="soc-media-icons">
         <span>
-          <Link to="#">
+          <a href="mailto:thecr8@proton.me">
             <FontAwesomeIcon icon={faInbox} style={{color: "#ff2600",}} />
-          </Link>
+          </a>
         </span>
         <span>
-          <Link to="https://instagram.com">
+          <Link to="https://www.instagram.com/thecr8comicshop/">
            <FontAwesomeIcon icon={faInstagram} style={{color: "#ff2600",}} />
           </Link>
         </span>
         <span>
-          <Link to="https://bsky.app">
+          <Link to="https://bsky.app/profile/thecr8.bsky.social">
             <FontAwesomeIcon icon={faBluesky} style={{color: "#ff2600",}} />
           </Link>
         </span>
